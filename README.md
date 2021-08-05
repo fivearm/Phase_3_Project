@@ -15,7 +15,7 @@
   
 
 ## Business Problem
-
+24 million people in Tanzania are affected by the water crisis. The President of Tanzania Samia Suluhu Hassan has tasked us with determining the status of water wells within her country to see where the country's limited resources need to be sent to provide its people with clean drinking water.
  
 ## Data
 
@@ -26,17 +26,34 @@
   
     
 ## EDA Results Notable Features
- 
+A majority of wells are functional (about 54%), though there is a large percentage (38%) that are non-functional.  About 7% of wells need repair.  
+
+![01_status_group_distribution](https://user-images.githubusercontent.com/82840623/128361746-fefdec06-f945-4f03-9839-82897f38d64f.png)
+
+We can see that older wells have higher percentage chance of being non-functional. 
+
+![07_status_group_by_decade_built](https://user-images.githubusercontent.com/82840623/128361985-8f548338-7bc5-43a6-83bc-6a1917a8ca07.png)
+
+We note that some installers seem to have higher percentages of non-funtional wells.  For example 'Government' and 'Central Government' (we don't know if these are the same category, or whether 'Government' might include regional authorities vs. the central government) installed wells have more of a chance at being non-functional than functional.  
+
+![08_status_group_by_top_20_well_installers](https://user-images.githubusercontent.com/82840623/128362982-3b00bc80-47f6-4452-8f90-ee2632148a92.png)
+
+Likewise, the type of water source affects the chances that the well is non-functional.  You can see from the following chart, for example, that springs have higher percentages of non-functional wells versus rivers, shallow wells higher than springs, and so forth.
+
+![04_status_group_by_source](https://user-images.githubusercontent.com/82840623/128363099-06154e46-c3dc-4555-835f-4728b9abcab5.png)
+
+
  
 ## Modeling Results
 We run five different classifiers and perform a GridSearch on each. Our metrics for selecting the best model are based on the business problem at hand. We are interested in overall model accuracy, but we want to focus on wells that need repair or are non-functional. Therefore we pay close attention to how well the models predict the ‘needs-repair’ and ‘non-functioning’ wells (we are less concerned with false positives since there is less harm in misidentifying a working well than in missing a faulty one). We create a new metric which is the sum of the recalls of ‘needs-repair’ and ‘non-functioning’ wells as a guide for selecting models. Here are the model performances:
 
-![image](https://user-images.githubusercontent.com/82840623/128359296-db6abdb2-7439-474f-9518-51776178d79c.png)
-
+![image](https://user-images.githubusercontent.com/82840623/128362806-79864f15-fd27-4da8-bec5-67c79d6b3dca.png)
 
 The default Support Vector Classifier does best with our custom metric, identifying nearly 70% of the ‘needs-repair’ wells (in the test data) and 68% of the non-functioning ones (even though, compared to other models, it has a lower overall accuracy due to weaker performance identifying functional wells).
 
 The tuned Random Forest model also does well, predicting 56% of ‘needs-repair’ wells and 76% of the non-functioning wells, making it slightly less predictive than the SVC model. It does have the advantage, however, of higher overall accuracy due to its better predictions of functioning wells.
+
+
   
     
 ## Conclusions
@@ -49,11 +66,17 @@ Please review our full analysis in [our Jupyter Notebook](./Notebook.ipynb) or o
     
 ## Repositroy Structure
  ```
-├── data                                <- Sourced from an external source
-├── images                              <- Images that were used in the presentation                                            
-├── gitignore                           <- python files to ignore 
-├── Notebook.ipynb                      <- The steps taken to acheive our endgoal
-├── Presentation.pdf                    <- PDF of our project presentation                        
-└── README.md                           <- The README.md
+├── data                                  <- Sourced from an external source
+├── images                                <- Images that were used in the presentation and notebooks                                           
+├── gitignore                             <- python files to ignore 
+├── 01_data_preparation.ipynb             <- Data Prep Notebook
+├── 02_logistic_regression_knn_svm.ipynb  <- Logistic Regression, KNN, and SVM Models Notebook
+├── 03_random_forest_models.ipynb         <- Random Forest Models Notebook
+├── 04_xgboost.ipynb                      <- XGBoost Models Notebook
+├── 05_feature_engineering.ipynb          <- Attempted Feature Engineering Notebook
+├── 06_visualizations.ipynb               <- Visualizations Notebook
+├── 07_svm_rfc.ipynb                      <- Final Models Notebook
+├── Presentation.pdf                      <- PDF of our project presentation                        
+└── README.md                             <- The README.md
 
 ```
