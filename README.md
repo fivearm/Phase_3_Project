@@ -77,7 +77,8 @@ Please review our full analysis in [our Jupyter Notebook](./Notebook.ipynb) or o
 ├── 05_feature_engineering.ipynb          <- Attempted Feature Engineering Notebook
 ├── 06_visualizations.ipynb               <- Visualizations Notebook
 ├── 07_svm_rfc.ipynb                      <- Final Models Notebook
-├── Presentation.pdf                      <- PDF of our project presentation                        
+├── Presentation.pdf                      <- PDF of our project presentation  
+├── Data Dictionary.txt                   <- Data Dictionary
 └── README.md                             <- The README.md
 
 ```
