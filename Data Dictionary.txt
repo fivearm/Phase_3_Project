@@ -1,0 +1,39 @@
+amount_tsh - (object)  Total static head (amount water available to waterpoint)
+date_recorded - (object) The date the row was entered
+funder - (object) Who funded the well
+gps_height - (int) Altitude of the well
+installer - (object) Organization that installed the well
+longitude - (float) GPS coordinate
+latitude - (float) GPS coordinate
+wpt_name - (object) Name of the waterpoint if there is one
+num_private - (int)
+basin - (object) Geographic water basin
+subvillage - (object) Geographic location
+region - (object) Geographic location
+region_code - (int) Geographic location (coded)
+district_code - (int) Geographic location (coded)
+lga - (object) Geographic location
+ward - (object) Geographic location
+population - (int) Population around the well
+public_meeting - (object) True/False
+recorded_by - (object) Group entering this row of data
+scheme_management - (object) Who operates the waterpoint
+scheme_name - (object) Who operates the waterpoint
+permit - (object) If the waterpoint is permitted
+construction_year - (int) Year the waterpoint was constructed
+extraction_type - (object) The kind of extraction the waterpoint uses
+extraction_type_group - (object) The kind of extraction the waterpoint uses
+extraction_type_class - (object)  The kind of extraction the waterpoint uses
+management - (object)  How the waterpoint is managed
+management_group - (object)  How the waterpoint is managed
+payment - (object) What the water costs
+payment_type - (object) What the water costs
+water_quality - (object) The quality of the water
+quality_group - (object) The quality of the water
+quantity - (object) The quantity of water
+quantity_group - (object) The quantity of water
+source - (object) The source of the water
+source_type - (object) The source of the water
+source_class - (object) The source of the water
+waterpoint_type - (object) The kind of waterpoint
+waterpoint_type_group - (object) The kind of waterpoint
