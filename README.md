@@ -59,7 +59,7 @@ The tuned Random Forest model also does well, predicting 56% of â€˜needs-repairâ
   
     
 ## Conclusions
-We recommend the SVC model due to its superior ability to identify the two well types that require servicing. We are willing to trade some false positives for this benefit. This recommendation would change, however, if the Government signals that visiting functional wells (when expecting to repair or replace one) is too inefficient and costly. In that case, we would be more concerned with false positives and recommend the Random Forest model.
+We recommend the SVC model due to its superior ability to identify the two well types that require servicing. SVC is especially good at identifying wells in need of repair, compared to other models, a feature that might appeal to the government if it wants to prioritize broken wells over non-functioning ones.  We are willing to trade some false positives for this benefit. This recommendation would change, however, if the Government signals that visiting functional wells (when expecting to repair or replace one) is too inefficient and costly. In that case, we would be more concerned with false positives and recommend the Random Forest model.
 
     
     
