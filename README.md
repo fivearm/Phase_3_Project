@@ -6,7 +6,7 @@
 - [Business Problem](#Business-Problem)
 - [Data](#Data)
    - [Well Data](./data)
-   - [Data Dictionary](./Data-Dictionary.txt)
+   - [Data Dictionary](./Data_Dictionary.txt)
 - [Methods](#Methods)
 - [EDA Results: Notable Features](#EDA-Results-Notable-Features) 
 - [Modeling Results](#Modeling-Results)
