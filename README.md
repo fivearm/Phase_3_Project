@@ -23,7 +23,8 @@
     
     
 ## Methods
-  
+We first merge the two data sets into one data set on 'id'. After this, we drop columns that were either irrelevant or had values that were the same. We clean the data by imputing 'missing' for categorical columns with missing data. Since our data set contained about 60,000 rows we decide to make a holdout data set with 10% of the data that we will test our two best models on. After that, we make some inferential plots to show if there was any relationship between a column and the status of a well. After this, we create a dummy model that would only predict the most frequent well type. Then we began a process of creating KNN, SVM, XGBoost, and RFC models to see which one would be the best at predicting which wells were either non-functional or need repairs. For each model, we create training and test data, use cross-validation, and calculate the accuracy and log loss.
+
     
 ## EDA Results Notable Features
 A majority of wells are functional (about 54%), though there is a large percentage (38%) that are non-functional.  About 7% of wells need repair.  
