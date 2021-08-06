@@ -1,6 +1,6 @@
 # Phase_3_Project
  
-**Authors**: Manav Kahlon, Anthony Conte, Sanjit Varma, Ben Bowman
+**Authors**: *Manav Kahlon, Anthony Conte, Sanjit Varma, Ben Bowman*
   
 ## Overview
 - [Business Problem](#Business-Problem)
@@ -16,15 +16,30 @@
   
 
 ## Business Problem
-24 million people in Tanzania are affected by the water crisis. The President of Tanzania Samia Suluhu Hassan has tasked us with determining the status of water wells within her country to see where the country's limited resources need to be sent to provide its people with clean drinking water.
+24 million people in Tanzania are affected by the water crisis. The President of Tanzania Samia Suluhu Hassan has tasked us with determining the status of water wells within her country to see where the country's limited resources need to be sent to provide its people with clean drinking water. [1](#sources)
  
 ## Data
+We examined close to 60k records of well data collected from Tanzania between 2002 and 2013.  This dataset included 40 different features relating to whether the well was functional, non-functional, or in need of repair. 
 
+ #### Data from Driven Data [2](#sources)
+    * Training_set_values.csv
+    * Test_set_values.csv
+    * Training_set_labels.csv
+ #### Non-engineered data
+    * X_train.csv
+    * y_train.csv
+    * X_test.csv
+    * y_test.csv
+ #### Engineered data
+    * X_train_eng.csv
+    * X_test_eng.csv
+    * y_train_eng.csv
+    * y_test_eng.csv
    
     
     
 ## Methods
-We first merge the two data sets into one data set on 'id'. After this, we drop columns that were either irrelevant or had values that were the same. We clean the data by imputing 'missing' for categorical columns with missing data. Since our data set contained about 60,000 rows we decide to make a holdout data set with 10% of the data that we will test our two best models on. After that, we make some inferential plots to show if there was any relationship between a column and the status of a well. After this, we create a dummy model that would only predict the most frequent well type. Then we began a process of creating KNN, SVM, XGBoost, and RFC models to see which one would be the best at predicting which wells were either non-functional or need repairs. For each model, we use the split training and test data, cross-validate, and calculate the accuracy and log loss.  
+We first merge the two data sets into one data set on `id`. After this, we drop columns that were either irrelevant or had values that were the same. We clean the data by imputing 'missing' for categorical columns with missing data. Since our data set contained about 60,000 rows we decide to make a holdout data set with 10% of the data that we will test our two best models on. After that, we make some inferential plots to show if there was any relationship between a column and the status of a well. After this, we create a dummy model that would only predict the most frequent well type. Then we began a process of creating KNN, SVM, XGBoost, and RFC models to see which one would be the best at predicting which wells were either non-functional or need repairs. For each model, we use the split training and test data, cross-validate, and calculate the accuracy and log loss.  
 
     
 ## EDA Results Notable Features
@@ -64,7 +79,7 @@ We recommend the SVC model due to its superior ability to identify the two well 
     
     
 ## For More Information
-Please review our full analysis in [our Jupyter Notebook](./Notebook.ipynb) or our [Presentation](./Presentation.pdf).    
+Please review our full analysis in different notebooks [Data Processing Notebook](./01_data_preparation.ipynb), [First Set of Models Notebook](./02_logistic_regression_knn_svm.ipynb), [Random Forest Model Notebook](./03_random_forest_models.ipynb), [XGBoost Notebook](./04_xgboost.ipynb), [Feature Engineering Notebook](./05_feature_engineering.ipynb), [Visualizations Notebook](./06_visualizations.ipynb), and our [Final Notebook](./07_svm_rfc.ipynb) or our [Presentation](./Presentation.pdf).    
     
 ## Repositroy Structure
  ```
@@ -83,3 +98,6 @@ Please review our full analysis in [our Jupyter Notebook](./Notebook.ipynb) or o
 └── README.md                             <- The README.md
 
 ```
+#### Sources
+1) https://lifewater.org/blog/tanzania-water-crisis-facts/
+2) https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/25/#labels_list
