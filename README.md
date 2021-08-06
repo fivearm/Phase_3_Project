@@ -19,7 +19,22 @@
 24 million people in Tanzania are affected by the water crisis. The President of Tanzania Samia Suluhu Hassan has tasked us with determining the status of water wells within her country to see where the country's limited resources need to be sent to provide its people with clean drinking water.
  
 ## Data
+We examined close to 60k records of well data collected from Tanzania between 2002 and 2013.  This dataset included 40 different features relating to whether the well was functional, non-functional, or in need of repair. 
 
+ #### Data from 
+    * Training_set_values.csv
+    * Test_set_values.csv
+    * Training_set_labels.csv
+ #### Non-engineered data
+    * X_train.csv
+    * y_train.csv
+    * X_test.csv
+    * y_test.csv
+ #### Engineered data
+    * X_train_eng.csv
+    * X_test_eng.csv
+    * y_train_eng.csv
+    * y_test_eng.csv
    
     
     
