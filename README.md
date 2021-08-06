@@ -45,19 +45,19 @@ We first merge the two data sets into one data set on `id`. After this, we drop 
 ## EDA Results Notable Features
 A majority of wells are functional (about 54%), though there is a large percentage (38%) that are non-functional.  About 7% of wells need repair.  
 
-![01_status_group_distribution](https://user-images.githubusercontent.com/82840623/128361746-fefdec06-f945-4f03-9839-82897f38d64f.png)
+![Status_group_dist](https://user-images.githubusercontent.com/82840623/128512999-1b11c1c2-9ca5-48b4-b71c-9c810f98dae5.png)
 
 We can see that older wells have higher percentage chance of being non-functional. 
 
-![07_status_group_by_decade_built](https://user-images.githubusercontent.com/82840623/128361985-8f548338-7bc5-43a6-83bc-6a1917a8ca07.png)
+![Decade](https://user-images.githubusercontent.com/82840623/128513133-126cf54b-00b0-45a6-8ee9-b408d265e164.png)
 
 We note that some installers seem to have higher percentages of non-funtional wells.  For example 'Government' and 'Central Government' (we don't know if these are the same category, or whether 'Government' might include regional authorities vs. the central government) installed wells have more of a chance at being non-functional than functional.  
 
-![08_status_group_by_top_20_well_installers](https://user-images.githubusercontent.com/82840623/128362982-3b00bc80-47f6-4452-8f90-ee2632148a92.png)
+![Installers](https://user-images.githubusercontent.com/82840623/128513185-dc4d9aa4-00a9-4db4-9f27-899886690269.png)
 
 Likewise, the type of water source affects the chances that the well is non-functional.  You can see from the following chart, for example, that springs have higher percentages of non-functional wells versus rivers, shallow wells higher than springs, and so forth.
 
-![04_status_group_by_source](https://user-images.githubusercontent.com/82840623/128363099-06154e46-c3dc-4555-835f-4728b9abcab5.png)
+![Source](https://user-images.githubusercontent.com/82840623/128513236-d345c4d0-3aea-4f51-9238-9ac5a537ab44.png)
 
 
  
