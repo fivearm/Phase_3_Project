@@ -1,6 +1,6 @@
 # Phase_3_Project
  
-**Authors**: Manav Kahlon, Anthony Conte, Sanjit Varma, Ben Bowman
+**Authors**: *Manav Kahlon, Anthony Conte, Sanjit Varma, Ben Bowman*
   
 ## Overview
 - [Business Problem](#Business-Problem)
@@ -79,7 +79,7 @@ We recommend the SVC model due to its superior ability to identify the two well 
     
     
 ## For More Information
-Please review our full analysis in different notebooks [Data Processing Notebook](./01_data_preparation.ipynb), [First Set of Models Notebook](./02_logistic_regression_knn_svm.ipynb), [Random Forest Model Notebook](./03_random_forest_models.ipynb), [XGBoost Notebook](./04_xgboost.ipynb), [Feature_Engineering Notebook](./05_feature_engineering.ipynb), [Visualizations Notebook](./06_visualizations.ipynb), and our [Final Notebook](./07_svm_rfc.ipynb) or our [Presentation](./Presentation.pdf).    
+Please review our full analysis in different notebooks [Data Processing Notebook](./01_data_preparation.ipynb), [First Set of Models Notebook](./02_logistic_regression_knn_svm.ipynb), [Random Forest Model Notebook](./03_random_forest_models.ipynb), [XGBoost Notebook](./04_xgboost.ipynb), [Feature Engineering Notebook](./05_feature_engineering.ipynb), [Visualizations Notebook](./06_visualizations.ipynb), and our [Final Notebook](./07_svm_rfc.ipynb) or our [Presentation](./Presentation.pdf).    
     
 ## Repositroy Structure
  ```
