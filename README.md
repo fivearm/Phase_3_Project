@@ -16,12 +16,12 @@
   
 
 ## Business Problem
-24 million people in Tanzania are affected by the water crisis. The President of Tanzania Samia Suluhu Hassan has tasked us with determining the status of water wells within her country to see where the country's limited resources need to be sent to provide its people with clean drinking water.
+24 million people in Tanzania are affected by the water crisis. The President of Tanzania Samia Suluhu Hassan has tasked us with determining the status of water wells within her country to see where the country's limited resources need to be sent to provide its people with clean drinking water.(1)
  
 ## Data
 We examined close to 60k records of well data collected from Tanzania between 2002 and 2013.  This dataset included 40 different features relating to whether the well was functional, non-functional, or in need of repair. 
 
- #### Data from 
+ #### Data from Driven Data(2)
     * Training_set_values.csv
     * Test_set_values.csv
     * Training_set_labels.csv
@@ -98,3 +98,6 @@ Please review our full analysis in [our Jupyter Notebook](./Notebook.ipynb) or o
 └── README.md                             <- The README.md
 
 ```
+Source(s)
+1) https://lifewater.org/blog/tanzania-water-crisis-facts/
+2) https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/25/#labels_list
